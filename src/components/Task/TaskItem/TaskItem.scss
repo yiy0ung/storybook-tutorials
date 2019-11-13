@@ -1,0 +1,85 @@
+
+
+.Task-container {
+  cursor: pointer;
+  padding: 1rem;
+  border-bottom: 1px solid #737373;
+  
+  & * {
+    user-select: none;
+    color: #fafafafa;
+    font-size: 0.9rem;
+  }
+
+  .Task {
+    display: flex;
+    flex-direction: row;
+
+    &-content {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &-fin {
+        text-decoration: line-through;
+      }
+      &-fin-icon {
+        margin: 0 0.8rem;
+        padding: 0.3rem;
+        border-radius: 8px;
+        background-color: #15859e;
+        color: #fff;
+      }
+    }
+
+    &-pin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-iconDone {
+        margin-right: 1rem;
+        color: #45cae7;
+
+        & * {
+          color: #45cae7;
+        }
+      }
+      &-icon {
+        margin-right: 1rem;
+      }
+    }
+
+    &-remove {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        & * {
+          color: tomato;
+        }
+      }
+      
+    }
+  }
+}
+
+// .checkDone[type="checkbox"] {
+//   display: none;
+// }
+
+// .checkDone[type="checkbox"] + label span {
+//   cursor:pointer;
+//   display:inline-block;
+//   width:19px;
+//   height:19px;
+//   margin:-2px 10px 0 0;
+//   vertical-align:middle;
+//   background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+// }
+
+// .checkDone[type="checkbox"]:checked + label span {
+//   background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+// }

@@ -1,0 +1,83 @@
+
+
+.TaskList {
+  // padding: 1rem;
+
+  &-loadwrap {
+    display: flex;
+    flex-direction: row;
+
+    &-text {
+      flex: 1;
+    }
+  }
+
+  &-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      &-icon {
+        font-size: 4rem;
+
+        & * {
+          color: #008000;
+        }
+      }
+    }
+
+    &-title {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    &-subtitle {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.loadingRow {
+  height: 3rem;
+  width: 100%;
+  // background: white;
+  display: flex;
+  align-items: center;
+  line-height: 1rem;
+  padding-left: 16px;
+}
+
+.loadingRow .glow-checkbox,
+.loadingRow .glow-text span {
+  animation: glow 1.5s ease-in-out infinite;
+  background: #404040;
+  color: transparent;
+  cursor: progress;
+  display: inline-block;
+}
+.loadingRow .glow-checkbox {
+  margin-right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.loadingRow + .loadingRow {
+  border-top: 1px solid #737373;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
