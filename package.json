@@ -6,7 +6,7 @@
     "core-decorators": "^0.20.0",
     "mobx": "^5.14.2",
     "mobx-react": "^6.1.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-icons": "^3.7.0",
